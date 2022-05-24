@@ -20,12 +20,6 @@ function generateHIIT(arr) {
   return regimen;
 }
 
-function appendToDocument() {
-  const hiitWorkout = generateHIIT(exercises);
-  const regimen = document.getElementById('regimen');
-  regimen.
-}
-
 const button = document.getElementsByTagName('button');
 
 button.addEventListener('click', function());
