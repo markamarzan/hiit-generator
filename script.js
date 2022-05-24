@@ -13,11 +13,20 @@ function getRandomNum(num) {
 
 //HIIT Generator Function
 function generateHIIT(arr) {
-  let hiitWorkout = [];
+  let regimen = [];
   for (let prop in arr) {
-    hiitWorkout.push(`${prop}: ${arr[prop][getRandomNum(arr[prop].length)]}`);
+    regimen.push(`${prop}: ${arr[prop][getRandomNum(arr[prop].length)]}`);
   }
-  console.log(hiitWorkout);
+  return regimen;
 }
 
-generateHIIT(exercises);
+function appendToDocument() {
+  const hiitWorkout = generateHIIT(exercises);
+  const regimen = document.getElementById('regimen');
+  regimen.
+}
+
+const button = document.getElementsByTagName('button');
+
+button.addEventListener('click', function());
+
