@@ -15,12 +15,18 @@ function getRandomNum(num) {
 function generateHIIT(arr) {
   let regimen = [];
   for (let prop in arr) {
-    regimen.push(`${prop}: ${arr[prop][getRandomNum(arr[prop].length)]}`);
+    regimen.push(`<br>${prop}: ${arr[prop][getRandomNum(arr[prop].length)]}`);
   }
   return regimen;
 }
 
-const button = document.getElementsByTagName('button');
+function appendToDoc() {
+  const hiitWorkout = generateHIIT(exercises);
+  let regimen = document.getElementById('regimen');
+  regimen.innerHTML = hiitWorkout;
+}
 
-button.addEventListener('click', function());
+const button = document.getElementById('button');
+
+button.addEventListener('click', appendToDoc)
 
